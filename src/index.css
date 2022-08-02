@@ -1,0 +1,60 @@
+body {
+    margin: auto;
+    padding: auto;
+    font-family: montserrat;
+    background-image: url(https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg?w=740&t=st=1659390982~exp=1659391582~hmac=2e3c741743a51906775cc834f2692a49b27b1f4f51821e013962847c2b1a19a6);
+    background-size: cover;
+    
+}
+.center {
+    display: flex;
+    text-align: ceter;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.ring {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+@keyframes ring {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #18b201;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #0456c8;
+    }
+}
+
+.ring:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+.circle-loading {
+    color:#0456c8;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: text 3s ease-in-out infinite;
+}
+@keyframes text {
+    50%{
+        color: black;
+    }
+}

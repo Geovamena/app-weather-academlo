@@ -1,0 +1,104 @@
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 211, 211);
+
+}
+
+.card {
+    width: 35rem;
+    height: 37.5rem;
+    background-color: #00000099;
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 25px #000;
+    display:flexbox;
+}
+
+.tittle {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 16px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.country-city {
+    margin: 1rem;
+    text-align:left;
+}
+
+.weather-c {
+    text-align: center;
+}
+
+.description {
+    margin: 1rem;
+    text-align: center;
+    font-weight: 400;  
+    font-family:'Times New Roman', Times, serif;
+    text-decoration:underline 1px;
+}   
+
+.color-w {
+    color: rgb(255, 211, 211) ;
+}
+
+.grade {
+    text-align: left;
+    font-weight: 400;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(222, 211, 211);
+}
+
+.grade-c-f {
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-family:serif;
+}
+
+.button {
+    color: white;
+    background: none;
+    border: 2px solid rgb(9, 143, 246);
+    border-radius: 20px;
+    font-family: "montserrat";
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 150px;
+    margin-left: 12.7rem;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+}
+
+.button:hover {
+    color: #fff;
+}
+
+.button::before {
+    content: "";
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(9, 143, 246);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.button::before {
+    transform: scaleY(0)
+}
+
+.button:hover::before {
+    transform: scaleY(1);
+}
